@@ -28,13 +28,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
-    <title>Lisp Crash Course</title>
+    <title>Clojure Crash Course</title>
     <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
     <link href="css/prettify.css" rel="stylesheet"/>
     <link href="css/moon.css" class="theme" rel="stylesheet" media="screen" />
     <link href="css/prez.css" rel="stylesheet" media="screen" />
   </head>
-  <body data-duration="5">
+  <body>
     <div id="presentation-counter">Loading...</div>
 
     <div class="presentation">
@@ -74,10 +74,12 @@
             }
           </style>
           <section class="middle">
-            <h1>Lisp in 3 Minutes</h1>
+            <h1>Clojure Crash Course</h1>
             <hr>
             <p class="author">Bodil Stokke</p>
-            <p>@bodiltv</p>
+			<p>@bodiltv</p>
+			<p class="author">Anders Karlsen</p>
+            
           </section>
         </div>
 
@@ -145,6 +147,36 @@
           </style>
         </div>
   
+        <div class="slide" id="fizzBuzzTask">
+			<section class="middle">
+				<h3>FizzBuzz</h3>
+				<ul data-build style="margin-left: 30%;">
+					<li>1</li>
+					<li>2</li>
+					<li>Fizz</li>
+					<li>4</li>	
+					<li>Buzz</li>
+					<li>...</li>
+					<li>14</li>
+					<li>FizzBuzz</li>
+					<li>16</li>
+				</ul>
+			</section>
+		</div>
+		
+		<div class="slide" id="fizzBuzzHints">
+			<section class="middle">
+			<pre class="lang-clj">
+(defn number-as-text [x]
+(cond 
+(= x 1) "One"
+(= x 2) "Two"
+ :else   "Many"))
+	
+Hint: (rem 7 3)	
+			</pre>
+			</section>
+		</div>
 
 
         <div class="slide" id="outro-slide">
