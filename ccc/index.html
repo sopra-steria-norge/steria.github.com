@@ -154,7 +154,20 @@
             }
           </style>
         </div>
-  
+
+		<div class="slide" id="counterclockwise-slide">
+		  <style>
+			#counterclockwise-slide a {
+			  font-size: 1.5em;
+			  font-weight: bold;
+			}
+		  </style>
+		  <section class="middle">
+			<h2>Clojure for Eclipse</h2>
+			<p><a href="http://ccw.cgrand.net/updatesite-betas/">http://ccw.cgrand.net/updatesite-betas/</a></p>
+		  </section>
+		</div>
+
         <div class="slide" id="fizzbuzz-task">
           <style>
             #fizzbuzz-task div {
@@ -219,6 +232,26 @@ Hint: (rem 7 3)
             </table>
           </section>
         </div>
+
+		<div class="slide" id="numerals-theory-slide">
+		  <section class="middle">
+			<pre class="lang-clj">
+(defn fac [n]                         
+(cond (> n 1) (* n (fac (- n 1)))
+:else n))            
+
+(defn hi [name] (str "Hi " name "!")) 
+
+(ns hello                             
+(:use clojure.test))              
+
+(with-test                            
+(defn square [n] (* n n))        
+(is (= 16 (square 4))))          
+>> (run-tests)                        
+			</pre>
+		  </section>
+		</div>
         
         <div class="slide" id="anagrams">
           <style>
@@ -235,6 +268,25 @@ Hint: (rem 7 3)
             </section>
         </div>
         
+		<div class="slide" id="anagram-theory-slide">
+		  <section class="middle">
+			<pre class="lang-clj">
+(defn square [n] (* n n))   
+(map square '(1 2 3 4))     
+-> (1 4 9 16)               
+
+(defn pos? [n] (> n 0))     
+(filter pos? '(-2 -1 0 1 2))
+-> (1 2)                    
+
+(sort '(5 1 9 4))           
+-> (1 4 5 9)                
+(count '("en" "to" "mange"))
+-> 3                        
+			</pre>
+		  </section>
+		</div>
+
         <div class="slide" id="minesweeper">
           <style>
             #minesweeper {
@@ -256,6 +308,22 @@ Hint: (rem 7 3)
               <p>For a given cell,<br><b>count the number of mines</b><br>in neighbouring cells.</p>
             </section>
         </div>
+
+		<div class="slide" id="minesweeper-theory-slide">
+		  <section class="middle">
+			<pre class="lang-clj">
+(def tall ["null" "en" "to" "tre"]) 
+(tall 2)                            
+-> "to"                             
+(tall 5)                            
+-> IndexOutOfBoundsException        
+(try (tall 5)                       
+  (catch IndexOutOfBoundsException e
+         "mange"))                  
+-> "mange"                          
+			</pre>
+		  </section>
+		</div>
 
         <div class="slide" id="outro-slide">
           <style>
