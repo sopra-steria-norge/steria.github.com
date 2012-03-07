@@ -281,7 +281,7 @@ Hint: (rem 7 3)
 
 (sort '(5 1 9 4))           
 -> (1 4 5 9)                
-(count '("en" "to" "mange"))
+(count '("one" "two" "many"))
 -> 3                        
 			</pre>
 		  </section>
@@ -312,15 +312,17 @@ Hint: (rem 7 3)
 		<div class="slide" id="minesweeper-theory-slide">
 		  <section class="middle">
 			<pre class="lang-clj">
-(def tall ["null" "en" "to" "tre"]) 
-(tall 2)                            
--> "to"                             
-(tall 5)                            
--> IndexOutOfBoundsException        
-(try (tall 5)                       
-  (catch IndexOutOfBoundsException e
-         "mange"))                  
--> "mange"                          
+(def numbers ["zero" "one" "two" "three"])
+(numbers 2)                               
+-> "two"                                  
+(numbers 5)                               
+-> IndexOutOfBoundsException              
+(try (numbers 5)                          
+  (catch IndexOutOfBoundsException e      
+         "many"))                         
+-> "many"                                 
+
+;; Remember: mine? neighbours mines
 			</pre>
 		  </section>
 		</div>
