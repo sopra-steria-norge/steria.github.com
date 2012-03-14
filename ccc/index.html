@@ -155,18 +155,18 @@
           </style>
         </div>
 
-		<div class="slide" id="counterclockwise-slide">
-		  <style>
-			#counterclockwise-slide a {
-			  font-size: 1.5em;
-			  font-weight: bold;
-			}
-		  </style>
-		  <section class="middle">
-			<h2>Clojure for Eclipse</h2>
-			<p><a href="http://ccw.cgrand.net/updatesite-betas/">http://ccw.cgrand.net/updatesite-betas/</a></p>
-		  </section>
-		</div>
+        <div class="slide" id="counterclockwise-slide">
+          <style>
+            #counterclockwise-slide a {
+              font-size: 1.5em;
+              font-weight: bold;
+            }
+          </style>
+          <section class="middle">
+            <h2>Clojure for Eclipse</h2>
+            <p><a href="http://ccw.cgrand.net/updatesite-betas/">http://ccw.cgrand.net/updatesite-betas/</a></p>
+          </section>
+        </div>
 
         <div class="slide" id="fizzbuzz-task">
           <style>
@@ -233,9 +233,9 @@ Hint: (rem 7 3)
           </section>
         </div>
 
-		<div class="slide" id="numerals-theory-slide">
-		  <section class="middle">
-			<pre class="lang-clj">
+        <div class="slide" id="numerals-theory-slide">
+          <section class="middle">
+            <pre class="lang-clj">
 (defn fac [n]                         
 (cond (> n 1) (* n (fac (- n 1)))
 :else n))            
@@ -249,9 +249,9 @@ Hint: (rem 7 3)
 (defn square [n] (* n n))        
 (is (= 16 (square 4))))          
 >> (run-tests)                        
-			</pre>
-		  </section>
-		</div>
+            </pre>
+          </section>
+        </div>
         
         <div class="slide" id="anagrams">
           <style>
@@ -268,10 +268,10 @@ Hint: (rem 7 3)
             </section>
         </div>
         
-		<div class="slide" id="anagram-theory-slide">
-		  <section class="middle">
-		    <p>Startpoint: <a href="https://gist.github.com/2024815">https://gist.github.com/2024815</a></p>
-			<pre class="lang-clj">
+        <div class="slide" id="anagram-theory-slide">
+          <section class="middle">
+            <p>Startpoint: <a href="https://gist.github.com/2024815">https://gist.github.com/2024815</a></p>
+            <pre class="lang-clj">
 (defn square [n] (* n n))   
 (map square '(1 2 3 4))     
 -> (1 4 9 16)               
@@ -283,10 +283,9 @@ Hint: (rem 7 3)
 (sort '(5 1 9 4))           
 -> (1 4 5 9)                
 (count '("one" "two" "many"))
--> 3                        
-			</pre>
-		  </section>
-		</div>
+-> 3                         </pre>
+          </section>
+        </div>
 
         <div class="slide" id="minesweeper">
           <style>
@@ -300,18 +299,19 @@ Hint: (rem 7 3)
         </div>
         
         <div class="slide" id="minesweeper-functions">
-            <section class="middle">
-              <h3>mine?</h3>
-              <p>Given a <b>coordinate</b>,<br>check if a cell has a <b>mine</b>.</p>
-              <h3>neighbours</h3>
-              <p>Make a list of<br><b>neighbour coordinates</b><br>of a given cell.</p>
-              <h3>mines</h3>
-              <p>For a given cell,<br><b>count the number of mines</b><br>in neighbouring cells.</p>
-            </section>
+          <section class="middle">
+            <h3>mine?</h3>
+            <p>Given a <b>coordinate</b>,<br>check if a cell has a <b>mine</b>.</p>
+            <h3>neighbours</h3>
+            <p>Make a list of<br><b>neighbour coordinates</b><br>of a given cell.</p>
+            <h3>mines</h3>
+            <p>For a given cell,<br><b>count the number of mines</b><br>in neighbouring cells.</p>
+          </section>
         </div>
 
-		<div class="slide" id="minesweeper-theory-slide">
-			<pre class="lang-clj">
+        <div class="slide" id="minesweeper-theory-slide">
+          <section class="middle">
+            <pre class="lang-clj">
 (def numbers ["zero" "one" "two" "three"])
 (numbers 2)                               
 -> "two"                                  
@@ -322,31 +322,18 @@ Hint: (rem 7 3)
          "many"))                         
 -> "many"                                 
 
-;; Remember: mine? neighbours mines
-			</pre>
-		  </section>
-		</div>
-		
-		<div class="slide" id="solutions">
-		  <section class="middle">
-		    <h3>Solutions</h3>
-			<ul>
-			<li><a href="https://github.com/anders88/clojureFromJava/blob/master/src/main/resources/romanNumber.clj">Roman numbers</a></li>
-			<li><a href="https://gist.github.com/1979023">Anagram</a></li>
-			<li><a href="https://gist.github.com/1894911">Minesweeper</a></li>
-			</ul>
-		  </section>			
-		</div>
-		
-	    <div class="slide" id="reference">
-		  <section class="middle">
-		    <h3>Reference</h3>
-			<ul>
-			<li>Reference Documentation: <a href="http://clojuredocs.org/">http://clojuredocs.org/</a></li>
-			<li>Interactive programming tasks: <a href="http://www.4clojure.com/">http://www.4clojure.com/</a></li>
-			</ul>
-		  </section>			
-		</div>
+;; Remember: mine? neighbours mines</pre>
+          </section>
+        </div>
+        
+        <div class="slide" id="reference">
+          <section class="middle">
+            <h3 style="margin-bottom: 1.5em">Reference</h3>
+              <p>Solutions: <a href="https://github.com/steria/ccc-solutions/">https://github.com/steria/ccc-solutions/</a></p>
+            <p>Reference documentation: <a href="http://clojuredocs.org/">http://clojuredocs.org/</a></p>
+            <p>Interactive programming tasks: <a href="http://www.4clojure.com/">http://www.4clojure.com/</a></p>
+          </section>            
+        </div>
 
         <div class="slide" id="outro-slide">
           <style>
